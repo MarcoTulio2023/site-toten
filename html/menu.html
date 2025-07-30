@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Tótem</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div id="menu" style="display: block;">
+    <button class="btn-chatgpt" onclick="abrirIframe('https://chat.openai.com')">ChatGPT - Café Sustentável</button>
+    <button class="btn-nara" onclick="abrirIframe('https://www.coocaceraraguari.com.br')">Falar com a Nara</button>
+    <button class="btn-cafe" onclick="abrirIframe('https://www.cafesustentavel.org')">Café Sustentável</button>
+  </div>
+
+  <div id="iframe-container" style="display: none;">
+    <button class="btn-voltar" onclick="voltarMenu()">← Voltar</button>
+    <iframe id="iframe-site" src="" frameborder="0"></iframe>
+  </div>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>
