@@ -30,3 +30,14 @@ function voltarMenu() {
   }
 }
 
+function enviarTeste() {
+  const valor = document.getElementById('input-teste').value;
+  if (valor.trim() === "") {
+    alert("Digite algo para testar.");
+    return;
+  }
+  console.log("Valor digitado:", valor);
+  alert("Você digitou: " + valor);
+}
+
+
