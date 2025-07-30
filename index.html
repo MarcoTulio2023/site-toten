@@ -5,26 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tótem Coocacer</title>
   <link rel="stylesheet" href="./Styles/Style.css" />
-  <script defer src="./js/AbrirMenu.js"></script>
-
+  <script defer src="./js/menu.js"></script>
 </head>
 <body onclick="abrirMenu()">
 
-  <!-- Vídeo YouTube como fundo -->
-  <iframe
-    id="bgVideoIframe"
-    src="https://www.youtube.com/embed/RbEgGIRnsyY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=RbEgGIRnsyY"
-    frameborder="0"
-    allow="autoplay"
-    allowfullscreen>
-  </iframe>
+  <iframe id="bgVideoIframe" src="https://www.youtube.com/embed/RbEgGIRnsyY?autoplay=1&mute=1&controls=0&loop=1&playlist=RbEgGIRnsyY&modestbranding=1&showinfo=0&rel=0" allow="autoplay" frameborder="0"></iframe>
 
-  <!-- Imagem sobreposta -->
   <img src="./assests/NARA - ANIMAÇÃO - FINAL_ALPHA_00604.png" alt="Assistente Virtual Coocacer" id="overlay-img" />
 
-  <!-- Botão interativo -->
   <div class="balao-fala">
-    <button onclick="irParaMenu()">Clique aqui para interagir</button>
+    <button>Clique aqui para interagir</button>
   </div>
 
 </body>

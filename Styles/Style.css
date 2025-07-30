@@ -1,107 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
-    #bgVideo {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      filter: blur(8px); /* Desfoque suave */
-    }
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
 
-    #overlay-img {
-      position: absolute;
-      bottom: 0%;
-      left: -170%;
-      transform: translateY(0);
-      width: 3000px;
-      z-index: 2;
-    }
+#bgVideoIframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110vw;
+  height: 123vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(15px);
+  pointer-events: none;
+  border: none;
+}
 
-    .balao-fala {
-      position: absolute;
-      bottom: 45%;
-      left: 60%;
-      right: 2%;
-      background: white;
-      color: #00826f;
-      padding: 10px 15px;
-      border-radius: 20px;
-      font-size: 18px;
-      font-weight: bold;
-      z-index: 2;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    }
+#overlay-img {
+  position: absolute;
+  bottom: 0%;
+  left: -170%;
+  transform: translateY(0);
+  width: 3000px;
+  z-index: 2;
+}
 
-    .balao-fala button {
-      background: none;
-      border: none;
-      color: #00826f;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 26px;
-      padding: 20px;
-    }
+.balao-fala {
+  position: absolute;
+  bottom: 45%;
+  left: 60%;
+  right: 2%;
+  background: white;
+  color: #00826f;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.balao-fala button {
+  background: none;
+  border: none;
+  color: #00826f;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 26px;
+  padding: 20px;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  z-index: 3;
+}
+
+#menu button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-chatgpt {
+  background-color: #000000;
+}
+
+.btn-nara {
+  background-color: #00826f;
+}
+
+.btn-cafe {
+  background-color: #105028;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #00826f;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+#iframe-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
 
 
-    #menu {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 3;
-    }
-
-    #menu button {
-      display: block;
-      margin: 10px auto;
-      padding: 12px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      border: none;
-      color: white;
-      border-radius: 8px;
-    }
-
-    .btn-chatgpt {
-      background-color: #000000;
-    }
-
-    .btn-nara {
-      background-color: #00826f;
-    }
-
-    .btn-cafe {
-      background-color: #105028;
-    }
-
-    #menu input {
-      margin-top: 20px;
-      padding: 10px;
-      width: 150%;
-      font-size: 16px;
-    }
-
-    #bgVideoIframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -1;
-      pointer-events: none; /* evita que clique no vídeo interfira no site */
-    }
