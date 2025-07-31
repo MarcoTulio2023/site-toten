@@ -23,8 +23,12 @@
 
   <!-- Campo de teste -->
   <div id="campo-teste">
-    <input type="text" id="input-teste" placeholder="Digite algo..." />
-    <button class="btn-teste" onclick="enviarTeste()">Enviar</button>
+    <input type="text" id="input-teste" placeholder="Digite algo..." onfocus="mostrarTeclado(this)" />
+    <button class="btn-teclado" onclick="mostrarTeclado()">Teclado</button>
+    <button class="btn-limpar" onclick="limparCampo()">Limpar</button>
+    <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+    <button class="btn-colar" onclick="colarTexto()">Colar</button>
+    <button class="btn-teste" onclick="mostrarTeclado(document.getElementById('input-teste'))">Enviar</button>
   </div>
 
   <div id="teclado" class="teclado-container" style="display: none;"></div>
